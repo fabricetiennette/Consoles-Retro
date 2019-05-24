@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,20 +9,93 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Retro60Prime.ttf">
+            <string>Retro60</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="Consoles_Retro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Atari 2600" translatesAutoresizingMaskIntoConstraints="NO" id="dac-ts-VBy">
+                                <rect key="frame" x="20" y="139" width="335" height="559"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Console Retro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcx-ok-NZj">
+                                <rect key="frame" x="20" y="54" width="335" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="uHX-BE-s3V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="102" translatesAutoresizingMaskIntoConstraints="NO" id="uBx-j3-DeP">
+                                <rect key="frame" x="20" y="718" width="335" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8m-sG-dQQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="50"/>
+                                        <state key="normal" image="gauche"/>
+                                        <connections>
+                                            <action selector="previousPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMc-GJ-jdp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWL-aL-T4T">
+                                        <rect key="frame" x="145.66666666666666" y="0.0" width="43.666666666666657" height="50"/>
+                                        <state key="normal" image="aleatoire"/>
+                                        <connections>
+                                            <action selector="randomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0r-jC-OZ1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDZ-qm-M19">
+                                        <rect key="frame" x="291.33333333333331" y="0.0" width="43.666666666666686" height="50"/>
+                                        <state key="normal" image="droite"/>
+                                        <connections>
+                                            <action selector="nextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8a-jh-V3a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JHv-Oa-CCM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dac-ts-VBy" firstAttribute="top" secondItem="hcx-ok-NZj" secondAttribute="bottom" constant="10" id="2KP-ND-RGo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uBx-j3-DeP" secondAttribute="bottom" constant="10" id="55H-7J-fuc"/>
+                            <constraint firstItem="uBx-j3-DeP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5ct-ES-Rvx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hcx-ok-NZj" secondAttribute="trailing" constant="20" id="D5I-od-XjP"/>
+                            <constraint firstItem="dac-ts-VBy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="II2-0J-SNp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dac-ts-VBy" secondAttribute="trailing" constant="20" id="V13-Xz-ehn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uBx-j3-DeP" secondAttribute="trailing" constant="20" id="c4q-kf-pRM"/>
+                            <constraint firstItem="hcx-ok-NZj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cSR-r3-utT"/>
+                            <constraint firstItem="uBx-j3-DeP" firstAttribute="top" secondItem="dac-ts-VBy" secondAttribute="bottom" constant="20" id="geq-a0-cRe"/>
+                            <constraint firstItem="hcx-ok-NZj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="z2T-Kc-ob4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="retroIV" destination="dac-ts-VBy" id="0fc-Bp-jbj"/>
+                        <outlet property="titleLabel" destination="hcx-ok-NZj" id="Ego-Ab-9dD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="137.4384236453202"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Atari 2600" width="360" height="338"/>
+        <image name="aleatoire" width="64" height="64"/>
+        <image name="droite" width="64" height="64"/>
+        <image name="gauche" width="64" height="64"/>
+    </resources>
 </document>

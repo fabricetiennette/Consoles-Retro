@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Retro60Prime.ttf">
+            <string>Retro60</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -24,13 +29,13 @@
                                     <constraint firstAttribute="width" secondItem="8Rs-rf-foI" secondAttribute="height" id="HO2-LR-t6C"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mes consoles Retro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa6-oH-s2b">
-                                <rect key="frame" x="40" y="188.66666666666666" width="295" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mes consoles Retro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xa6-oH-s2b">
+                                <rect key="frame" x="20" y="188.66666666666666" width="335" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="yo3-Sl-96G"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Retro60" family="Retro60" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -40,8 +45,8 @@
                             <constraint firstItem="8Rs-rf-foI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ayQ-G4-gRT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Rs-rf-foI" secondAttribute="trailing" constant="40" id="itX-rw-5Qk"/>
                             <constraint firstItem="8Rs-rf-foI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rad-pL-bFW"/>
-                            <constraint firstItem="Xa6-oH-s2b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="u0P-9Q-YMU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xa6-oH-s2b" secondAttribute="trailing" constant="40" id="wBE-TH-eHd"/>
+                            <constraint firstItem="Xa6-oH-s2b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u0P-9Q-YMU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xa6-oH-s2b" secondAttribute="trailing" constant="20" id="wBE-TH-eHd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

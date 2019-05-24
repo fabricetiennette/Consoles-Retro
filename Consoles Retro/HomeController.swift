@@ -10,10 +10,23 @@ import UIKit
 
 class HomeController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var retroIV: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-
+    
+    @IBAction func previousPressed(_ sender: Any) {
+    }
+    
+    @IBAction func nextPressed(_ sender: Any) {
+    }
+    
+    @IBAction func randomPressed(_ sender: Any) {
+    }
 }
