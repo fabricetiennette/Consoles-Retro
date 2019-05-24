@@ -13,6 +13,9 @@
 		2C724ED12297FA4700B9C67A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C724ECF2297FA4700B9C67A /* LaunchScreen.storyboard */; };
 		2C724ED92297FAB700B9C67A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C724ED82297FAB700B9C67A /* HomeController.swift */; };
 		2C724EDC2297FF9800B9C67A /* Retro60Prime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C724EDB2297FF9800B9C67A /* Retro60Prime.ttf */; };
+		2C724EE02298217800B9C67A /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C724EDF2298217800B9C67A /* Console.swift */; };
+		2C724EE22298263500B9C67A /* ConsoleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C724EE12298263500B9C67A /* ConsoleCollection.swift */; };
+		2C724EE422982CCA00B9C67A /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C724EE322982CCA00B9C67A /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2C724ED22297FA4700B9C67A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C724ED82297FAB700B9C67A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		2C724EDB2297FF9800B9C67A /* Retro60Prime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Retro60Prime.ttf; sourceTree = "<group>"; };
+		2C724EDF2298217800B9C67A /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		2C724EE12298263500B9C67A /* ConsoleCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleCollection.swift; sourceTree = "<group>"; };
+		2C724EE322982CCA00B9C67A /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				2C724EDA2297FF6200B9C67A /* Resources */,
 				2C724EC62297FA4500B9C67A /* AppDelegate.swift */,
+				2C724ED82297FAB700B9C67A /* HomeController.swift */,
+				2C724EE12298263500B9C67A /* ConsoleCollection.swift */,
+				2C724EE322982CCA00B9C67A /* DetailController.swift */,
 				2C724ECA2297FA4500B9C67A /* Main.storyboard */,
 				2C724ECD2297FA4700B9C67A /* Assets.xcassets */,
 				2C724ECF2297FA4700B9C67A /* LaunchScreen.storyboard */,
 				2C724ED22297FA4700B9C67A /* Info.plist */,
-				2C724ED82297FAB700B9C67A /* HomeController.swift */,
+				2C724EDF2298217800B9C67A /* Console.swift */,
 			);
 			path = "Consoles Retro";
 			sourceTree = "<group>";
@@ -148,6 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C724ED92297FAB700B9C67A /* HomeController.swift in Sources */,
+				2C724EE22298263500B9C67A /* ConsoleCollection.swift in Sources */,
+				2C724EE02298217800B9C67A /* Console.swift in Sources */,
+				2C724EE422982CCA00B9C67A /* DetailController.swift in Sources */,
 				2C724EC72297FA4500B9C67A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
